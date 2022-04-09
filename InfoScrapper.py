@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # Получение данных
 def get_all_info(driver, data):
     get_mines_info(driver, data)
-    get_fabric_info(driver, data)
+    get_factory_info(driver, data)
 
 
 def get_mines_info(driver, data):
@@ -15,12 +15,14 @@ def get_mines_info(driver, data):
     get_levels(driver, data.mine_levels, data.mine_level_refs, data.blocked_mine_level_refs)
     get_available_buildings(driver, data.Upgrade_mines_buttons, data.Mines_available_to_build)
     get_resource_income_and_storages(driver, data)
+    print('Mines info collected')
 
 
-def get_fabric_info(driver, data):
+def get_factory_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities')
-    get_levels(driver, data.Fabric_levels, data.Fabric_level_refs, data.Fabric_level_refs)
-    get_available_buildings(driver, data.Upgrade_fabric_refs, data.Fabrics_available_to_build)
+    get_levels(driver, data.Factory_levels, data.Factory_level_refs, data.Factory_level_refs)
+    get_available_buildings(driver, data.Upgrade_factory_refs, data.Factory_available_to_build)
+    print('Factory info collected')
 
 
 def get_user_resources_info(driver, data):

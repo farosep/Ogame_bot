@@ -93,33 +93,33 @@ class data():
     }
 
     #  Ссылки на улучшение фабрик
-    Upgrade_fabric_refs = {
+    Upgrade_factory_refs = {
         'roboticsFactory': 'span.roboticsFactory > button',
         'researchLaboratory': 'span.researchLaboratory > button',
         'shipyard': 'span.shipyard > button'
         }
 
     #  Ссылки на уровень фабрик
-    Fabric_level_refs = {
+    Factory_level_refs = {
         'roboticsFactory': 'span.roboticsFactory > span > span:nth-child(1)',
         'researchLaboratory': 'span.researchLaboratory > span > span:nth-child(1)',
         'shipyard': 'span.shipyard > span > span:nth-child(1)'
     }
     # Ссылки на заблокированные уровни фабрик
-    Blocked_fabric_level_refs = {
+    Blocked_factory_level_refs = {
         'roboticsFactory': 0,
         'researchLaboratory': 0,
         'shipyard': 0
     }
 
     #  Уровень фабрик
-    Fabric_levels = {
+    Factory_levels = {
         'roboticsFactory': 0,
         'researchLaboratory': 0,
         'shipyard': 0
     }
 
-    Fabrics_available_to_build = {
+    Factory_available_to_build = {
         'roboticsFactory': False,
         'researchLaboratory': False,
         'shipyard': False
