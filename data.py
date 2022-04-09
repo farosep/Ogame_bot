@@ -14,7 +14,6 @@ class data():
         'energy': 'resources_energy'
     }
 
-
     #  Прирост ресурсов в час
     resources_income = {
         'metal_income': 0,
@@ -59,15 +58,15 @@ class data():
 
     # Ссылки на уровни шахт
     mine_level_refs = {
-        'metal_mine_level': 'span.crystalMine > span:nth-child(2) > span:nth-child(1)',
-        'crystal_mine_level': 'span.metalMine > span:nth-child(2) > span:nth-child(1)',
+        'metal_mine_level': 'span.metalMine > span:nth-child(2) > span:nth-child(1)',
+        'crystal_mine_level': 'span.crystalMine > span:nth-child(2) > span:nth-child(1)',
         'deuterium_mine_level': 'span.deuteriumSynthesizer > span:nth-child(2) > span:nth-child(1)'
     }
 
     #  Ссылки на уровень заблокированных к постройке шахт
     blocked_mine_level_refs = {
-        'metal_mine_level': 'span.crystalMine > span:nth-child(1) > span:nth-child(1)',
-        'crystal_mine_level': 'span.metalMine > span:nth-child(1) > span:nth-child(1)',
+        'metal_mine_level': 'span.metalMine > span:nth-child(1) > span:nth-child(1)',
+        'crystal_mine_level': 'span.crystalMine > span:nth-child(1) > span:nth-child(1)',
         'deuterium_mine_level': 'span.deuteriumSynthesizer > span:nth-child(1) > span:nth-child(1)'
     }
 
@@ -93,5 +92,36 @@ class data():
         'deuterium_storage': 'span.deuteriumStorage > button:nth-child(1)'
     }
 
+    #  Ссылки на улучшение фабрик
+    Upgrade_fabric_refs = {
+        'roboticsFactory': 'span.roboticsFactory > button',
+        'researchLaboratory': 'span.researchLaboratory > button',
+        'shipyard': 'span.shipyard > button'
+        }
 
+    #  Ссылки на уровень фабрик
+    Fabric_level_refs = {
+        'roboticsFactory': 'span.roboticsFactory > span > span:nth-child(1)',
+        'researchLaboratory': 'span.researchLaboratory > span > span:nth-child(1)',
+        'shipyard': 'span.shipyard > span > span:nth-child(1)'
+    }
+    # Ссылки на заблокированные уровни фабрик
+    Blocked_fabric_level_refs = {
+        'roboticsFactory': 0,
+        'researchLaboratory': 0,
+        'shipyard': 0
+    }
+
+    #  Уровень фабрик
+    Fabric_levels = {
+        'roboticsFactory': 0,
+        'researchLaboratory': 0,
+        'shipyard': 0
+    }
+
+    Fabrics_available_to_build = {
+        'roboticsFactory': False,
+        'researchLaboratory': False,
+        'shipyard': False
+    }
 

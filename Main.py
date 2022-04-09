@@ -1,5 +1,6 @@
 from selenium import webdriver
-import Think_what_to_do
+import Builder
+import InfoScrapper
 from Login import Login
 import time
 from data import data
@@ -15,9 +16,9 @@ class StartGame():
         Login(self.driver)
         while True:
             #  собираем информацию
-            Think_what_to_do.get_all_info(self.driver, self.data)
+            InfoScrapper.get_all_info(self.driver, self.data)
             #  делаем действия
-            Think_what_to_do.decide_what_mine_to_build(self.driver, self.data)
+            Builder.decide_what_to_build(self.driver, self.data)
             time.sleep(30)
 
 
