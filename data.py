@@ -1,3 +1,5 @@
+
+
 class data():
     #  Ресурсы игрока
     resources = {
@@ -105,6 +107,7 @@ class data():
         'researchLaboratory': 'span.researchLaboratory > span > span:nth-child(1)',
         'shipyard': 'span.shipyard > span > span:nth-child(1)'
     }
+
     # Ссылки на заблокированные уровни фабрик
     Blocked_factory_level_refs = {
         'roboticsFactory': 0,
@@ -119,9 +122,54 @@ class data():
         'shipyard': 0
     }
 
+    #  Фабрики доступные к постройке
     Factory_available_to_build = {
         'roboticsFactory': False,
         'researchLaboratory': False,
         'shipyard': False
     }
 
+    #  Кнопки улучшения технологий
+    Technologies_upgrade_buttons = {
+        'energyTechnology': 'span.energyTechnology > button',
+        'espionageTechnology': 'span.espionageTechnology > button',
+        'computerTechnology': 'span.computerTechnology > button',
+        'weaponsTechnology': 'span.weaponsTechnology > button',
+        'armorTechnology': 'span.armorTechnology > button'
+    }
+
+    #  Уровни технологий
+    Technologies_levels = {
+        'energyTechnology': 0,
+        'espionageTechnology': 0,
+        'computerTechnology': 0,
+        'weaponsTechnology': 0,
+        'armorTechnology': 0
+    }
+
+    #  Ссылки на уровни технологий
+    Technologies_levels_refs ={
+        'energyTechnology': 'span.energyTechnology > span:nth-child(2) > span:nth-child(1)',
+        'espionageTechnology': 'span.espionageTechnology > span:nth-child(2) > span:nth-child(1)',
+        'computerTechnology': 'span.computerTechnology > span:nth-child(2) > span:nth-child(1)',
+        'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(2) > span:nth-child(1)',
+        'armorTechnology': 'span.armorTechnology > span:nth-child(2) > span:nth-child(1)'
+    }
+
+    #  Ссылки на заблокированные уровни технологий
+    Blocked_technologies_levels_refs = {
+        'energyTechnology': 'span.energyTechnology > span:nth-child(1) > span:nth-child(1)',
+        'espionageTechnology': 'span.espionageTechnology > span:nth-child(1) > span:nth-child(1)',
+        'computerTechnology': 'span.computerTechnology > span:nth-child(1) > span:nth-child(1)',
+        'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(1) > span:nth-child(1)',
+        'armorTechnology': 'span.armorTechnology > span:nth-child(1) > span:nth-child(1)'
+    }
+
+    #  Технологии которые можно улучшить
+    Available_technologies = {
+        'energyTechnology': False,
+        'espionageTechnology': False,
+        'computerTechnology': False,
+        'weaponsTechnology': False,
+        'armorTechnology': False
+    }

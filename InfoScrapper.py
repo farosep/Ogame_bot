@@ -7,13 +7,13 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_all_info(driver, data):
     get_mines_info(driver, data)
     get_factory_info(driver, data)
-
+    get_techologies_info(driver,data)
 
 def get_mines_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies')
     get_user_resources_info(driver, data)
     get_levels(driver, data.mine_levels, data.mine_level_refs, data.blocked_mine_level_refs)
-    get_available_buildings(driver, data.Upgrade_mines_buttons, data.Mines_available_to_build)
+    get_availables(driver, data.Upgrade_mines_buttons, data.Mines_available_to_build)
     get_resource_income_and_storages(driver, data)
     print('Mines info collected')
 
@@ -21,9 +21,15 @@ def get_mines_info(driver, data):
 def get_factory_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities')
     get_levels(driver, data.Factory_levels, data.Factory_level_refs, data.Factory_level_refs)
-    get_available_buildings(driver, data.Upgrade_factory_refs, data.Factory_available_to_build)
+    get_availables(driver, data.Upgrade_factory_refs, data.Factory_available_to_build)
     print('Factory info collected')
 
+
+def get_techologies_info(driver, data):
+    driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=research')
+    get_levels(driver, data.Technologies_levels, data.Technologies_levels_refs, data.Blocked_technologies_levels_refs)
+    get_availables(driver, data.Technologies_upgrade_buttons, data.Available_technologies)
+    print('Tech info collected')
 
 def get_user_resources_info(driver, data):
     for i in data.resources_refs:
@@ -76,13 +82,13 @@ def get_levels(driver, levels, refs, blocked_refs):
                 print(f'Не смогли получить уровень {blocked_refs[i]}')
 
 
-def get_available_buildings(driver, upgrade_buttons, available_buildings):
+def get_availables(driver, upgrade_buttons, availables):
     for i in upgrade_buttons:
         try:
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((
                 By.CSS_SELECTOR, upgrade_buttons[i])))
             driver.find_element(By.CSS_SELECTOR, upgrade_buttons[i])
-            available_buildings[i] = True
+            availables[i] = True
         except:
-            available_buildings[i] = False
+            availables[i] = False
 

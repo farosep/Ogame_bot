@@ -601,3 +601,280 @@ getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/
 
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1649523623286	geckodriver	INFO	Listening on 127.0.0.1:54874
+1649523626365	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "54875" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileoxoqWh"
+1649523626675	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileoxoqWh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54875/devtools/browser/2951c15d-ca72-40bd-90b5-46c5593e9c8c
+1649523627923	Marionette	INFO	Listening on port 54880
+1649523628440	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649523632487	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649523634563	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649523657730	Marionette	INFO	Stopped listening on port 54880
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1649523663597	geckodriver	INFO	Listening on 127.0.0.1:55033
+1649523666727	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "55034" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileINvRRz"
+1649523667045	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileINvRRz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55034/devtools/browser/a616e550-7afc-4d81-8f72-01fa6310337a
+1649523668239	Marionette	INFO	Listening on port 55039
+1649523668301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649523672792	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649523674787	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649569043870	geckodriver	INFO	Listening on 127.0.0.1:58358
+1649569046999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "58359" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilebXrMgM"
+1649569048332	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilebXrMgM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58359/devtools/browser/db09890c-ae0d-4932-96a2-a5c58947429f
+1649569050748	Marionette	INFO	Listening on port 58364
+1649569051216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649569056270	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649569058390	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649569124823	Marionette	INFO	Stopped listening on port 58364
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1649569128713	geckodriver	INFO	Listening on 127.0.0.1:54851
+1649569131803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "54852" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileiATQwS"
+1649569132124	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileiATQwS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54852/devtools/browser/21d84e65-7ac0-493b-8379-366c0414fe24
+1649569133509	Marionette	INFO	Listening on port 54883
+1649569133861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649569137339	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+JavaScript error: resource://devtools/client/fronts/targets/target-mixin.js, line 316: Error: Target already destroyed, unable to fetch children fronts
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649570681238	Marionette	INFO	Stopped listening on port 54883
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1649570684104	geckodriver	INFO	Listening on 127.0.0.1:64718
+1649570687216	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "64719" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile1PlrJ6"
+1649570687556	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile1PlrJ6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64719/devtools/browser/80dc9cbb-5f88-4555-8bc5-241bbd3eab85
+1649570688785	Marionette	INFO	Listening on port 64724
+1649570689304	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649570693912	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649570695961	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://gf3.geo.gfsrv.net/cdn86/df4b63bb08d9f50d489371846a47d2.js, line 422: TypeError: can't access property "appendChild", document.body is null
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649572119093	Marionette	INFO	Stopped listening on port 64724
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 13944, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 13944, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1649572123312	geckodriver	INFO	Listening on 127.0.0.1:61274
+1649572126443	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "61275" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileluyjaF"
+1649572126762	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileluyjaF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61275/devtools/browser/4dab8196-98d8-41ac-a96f-564e24a28971
+1649572128075	Marionette	INFO	Listening on port 61280
+1649572128541	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649572132441	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649572134576	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://gf3.geo.gfsrv.net/cdn86/df4b63bb08d9f50d489371846a47d2.js, line 422: TypeError: can't access property "appendChild", document.body is null
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649573788725	geckodriver	INFO	Listening on 127.0.0.1:62653
+1649573791835	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62654" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileGwKayT"
+1649573792140	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileGwKayT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62654/devtools/browser/b9c1df23-31e9-4d56-899e-786de37afbca
+1649573793345	Marionette	INFO	Listening on port 62659
+1649573793400	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649573797636	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649573799758	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649573963685	geckodriver	INFO	Listening on 127.0.0.1:49975
+1649573966783	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "49976" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile5aCUvK"
+1649573967097	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile5aCUvK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49976/devtools/browser/79017962-0f8d-4e8e-acb0-74788c839ce1
+1649573968398	Marionette	INFO	Listening on port 49981
+1649573968850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649573972420	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649574593539	geckodriver	INFO	Listening on 127.0.0.1:59183
+1649574596652	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "59184" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileQpeqXx"
+1649574596952	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileQpeqXx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59184/devtools/browser/629421dc-96f4-4ec9-83ab-398757816dd0
+1649574598410	Marionette	INFO	Listening on port 59189
+1649574598773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649574603105	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649574605214	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649574952621	geckodriver	INFO	Listening on 127.0.0.1:56097
+1649574955728	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "56098" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilejK5K47"
+1649574956027	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilejK5K47\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56098/devtools/browser/3f35cbff-5e4e-4611-8b0f-2344919ac1a5
+1649574957220	Marionette	INFO	Listening on port 56103
+1649574957292	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649574961865	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649574963983	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649577432007	geckodriver	INFO	Listening on 127.0.0.1:56234
+1649577435117	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "56235" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile7RO9rJ"
+1649577435446	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile7RO9rJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56235/devtools/browser/26e37d41-acd3-40bf-a930-223eaaa672fb
+1649577436674	Marionette	INFO	Listening on port 56241
+1649577437191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649577442258	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649577444365	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one

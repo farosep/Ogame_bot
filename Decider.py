@@ -1,9 +1,10 @@
 from selenium.webdriver.common.by import By
 
 
-def decide_what_to_build(driver, data):
-    if decide_what_factory_to_build(driver, data):
-        decide_what_mine_to_build(driver, data)
+def decide_what_to_do(driver, data):
+    if decide_what_tech_to_research(driver, data):
+        if decide_what_factory_to_build(driver, data):
+            decide_what_mine_to_build(driver, data)
 
 
 def build_resource(driver, data, building_name):
@@ -50,7 +51,7 @@ def decide_what_mine_to_build(driver, data):
           data.Mines_available_to_build['deuterium_storage']):
         build_resource(driver, data, 'deuterium_storage')
     else:
-        return False
+        return True
 
 
 def decide_what_factory_to_build(driver, data):
@@ -62,3 +63,25 @@ def decide_what_factory_to_build(driver, data):
         build_factory(driver, data, 'roboticsFactory')
     else:
         return True
+
+
+def decide_what_tech_to_research(driver, data):
+    if data.Available_technologies['espionageTechnology']:
+        research_technology(driver, data, 'espionageTechnology')
+    elif data.Available_technologies['computerTechnology']:
+        research_technology(driver, data, 'computerTechnology')
+    elif data.Available_technologies['energyTechnology']:
+        research_technology(driver, data, 'energyTechnology')
+    elif data.Available_technologies['weaponsTechnology']:
+        research_technology(driver, data, 'weaponsTechnology')
+    elif data.Available_technologies['armorTechnology']:
+        research_technology(driver, data, 'armorTechnology')
+    else:
+        return True
+
+
+def research_technology(driver, data, research_name):
+    driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=research')
+    driver.find_element(By.CSS_SELECTOR, data.Technologies_upgrade_buttons[research_name]).click()
+    print(f'{research_name} research was started')
+    data.Factory_available_to_build['researchLaboratory'] = False
