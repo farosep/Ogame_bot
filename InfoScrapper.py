@@ -1,13 +1,14 @@
+import datetime
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 
 
 # Получение данных
 def get_all_info(driver, data):
     get_mines_info(driver, data)
     get_factory_info(driver, data)
-    get_techologies_info(driver,data)
+    get_techologies_info(driver, data)
+
 
 def get_mines_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies')
@@ -15,30 +16,29 @@ def get_mines_info(driver, data):
     get_levels(driver, data.mine_levels, data.mine_level_refs, data.blocked_mine_level_refs)
     get_availables(driver, data.Upgrade_mines_buttons, data.Mines_available_to_build)
     get_resource_income_and_storages(driver, data)
-    print('Mines info collected')
+    print(f'Mines info collected  time ({datetime.datetime.now().strftime("%H:%M:%S")})')
 
 
 def get_factory_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities')
     get_levels(driver, data.Factory_levels, data.Factory_level_refs, data.Factory_level_refs)
     get_availables(driver, data.Upgrade_factory_refs, data.Factory_available_to_build)
-    print('Factory info collected')
+    print(f'Factory info collected  time ({datetime.datetime.now().strftime("%H:%M:%S")})')
 
 
 def get_techologies_info(driver, data):
     driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=research')
     get_levels(driver, data.Technologies_levels, data.Technologies_levels_refs, data.Blocked_technologies_levels_refs)
     get_availables(driver, data.Technologies_upgrade_buttons, data.Available_technologies)
-    print('Tech info collected')
+    print(f'Tech info collected  time ({datetime.datetime.now().strftime("%H:%M:%S")})')
+
 
 def get_user_resources_info(driver, data):
     for i in data.resources_refs:
         try:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((
-                By.ID, data.resources_refs[i])))
             data.resources[i] = int(driver.find_element(By.ID, data.resources_refs[i]).text.replace('.', ''))
         except:
-            print(f'Не смогли найти количество ресурсов {data.resources_refs[i]}')
+            print(f'Не смогли найти количество ресурсов {data.resources_refs[i]}  time ({datetime.datetime.now().strftime("%H:%M:%S")})')
             data.resources[i] = 0
 
 
@@ -56,8 +56,6 @@ def get_resource_income_and_storages(driver, data):
     #  Тут собираем вместимость хранилищ
     for i in data.resources_storages:
         try:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((
-                By.CSS_SELECTOR, data.mine_capacity_refs[i])))
             data.resources_storages[i] = int(
                     driver.find_element(By.CSS_SELECTOR, data.mine_capacity_refs[i]).text.replace('.', ''))
         except:
@@ -65,13 +63,12 @@ def get_resource_income_and_storages(driver, data):
                 data.resources_storages[i] = int(
                     driver.find_element(By.CSS_SELECTOR, data.mine_overexcited_capacity_refs[i]).text.replace('.', ''))
             except:
-                print(f'Не смогли получить размер хранилища {data.mine_capacity_refs[i]}')
+                print(f'Не смогли получить размер хранилища {data.mine_capacity_refs[i]}  time ({datetime.datetime.now().strftime("%H:%M:%S")})')
 
 
 def get_levels(driver, levels, refs, blocked_refs):
     for i in levels:
         try:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, refs[i])))
             levels[i] = int(driver.find_element(By.CSS_SELECTOR,
                                                           refs[i]).text.replace('.', ''))
         except:
@@ -79,14 +76,12 @@ def get_levels(driver, levels, refs, blocked_refs):
                 levels[i] = int(driver.find_element(By.CSS_SELECTOR,
                                                     blocked_refs[i]).text.replace('.', ''))
             except:
-                print(f'Не смогли получить уровень {blocked_refs[i]}')
+                print(f'Не смогли получить уровень {blocked_refs[i]} time ({datetime.datetime.now().strftime("%H:%M:%S")})')
 
 
 def get_availables(driver, upgrade_buttons, availables):
     for i in upgrade_buttons:
         try:
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((
-                By.CSS_SELECTOR, upgrade_buttons[i])))
             driver.find_element(By.CSS_SELECTOR, upgrade_buttons[i])
             availables[i] = True
         except:

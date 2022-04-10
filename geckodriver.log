@@ -878,3 +878,550 @@ JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.i
 JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
 JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
 JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649579276698	geckodriver	INFO	Listening on 127.0.0.1:63863
+1649579279791	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63864" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileqeaYWs"
+1649579280103	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileqeaYWs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63864/devtools/browser/c8708f0f-7ac4-4b5c-95ea-779c2ac65708
+1649579281321	Marionette	INFO	Listening on port 63869
+1649579281348	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649579285783	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("can't access property \"parentNode\", currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: can't access property "parentNode", currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 316))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: can't access property "getRecipesForHost", gRecipeManager is null
+1649580541446	geckodriver	INFO	Listening on 127.0.0.1:54607
+1649580544542	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "54608" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile2KMYkj"
+1649580544869	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile2KMYkj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54608/devtools/browser/e3546139-c6ef-4c0f-8bce-15561fadad64
+1649580546097	Marionette	INFO	Listening on port 54613
+1649580546640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649580564523	geckodriver	INFO	Listening on 127.0.0.1:61623
+1649580567632	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "61624" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile5QIuzp"
+1649580567930	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile5QIuzp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61624/devtools/browser/92d7d364-f9dc-4460-b435-f63bc6e5436b
+1649580569163	Marionette	INFO	Listening on port 61629
+1649580569202	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649580573233	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649584900703	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649585730892	Marionette	INFO	Stopped listening on port 61629
+Marionette threw an error: TypeError: can't access property "getActor", browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1649585739248	geckodriver	INFO	Listening on 127.0.0.1:60493
+1649585742370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60494" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile1KFdiU"
+1649585742683	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile1KFdiU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60494/devtools/browser/cf304586-1cd5-4082-b35c-9621c46b17d3
+1649585743889	Marionette	INFO	Listening on port 60499
+1649585743954	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649585748311	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649585871054	geckodriver	INFO	Listening on 127.0.0.1:63335
+1649585874162	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63336" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile6Eqsyk"
+1649585874467	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile6Eqsyk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63336/devtools/browser/1ebadd0b-541f-46e8-85f5-3cb9c5a4589c
+1649585875671	Marionette	INFO	Listening on port 63341
+1649585875709	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649585879759	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649585897711	geckodriver	INFO	Listening on 127.0.0.1:63442
+1649585900792	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63443" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileCpN96P"
+1649585901114	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileCpN96P\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63443/devtools/browser/d4c1fa93-41df-4021-b052-70202ad408a0
+1649585902327	Marionette	INFO	Listening on port 63448
+1649585902866	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649585908021	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649586372388	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649586520754	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649586625350	geckodriver	INFO	Listening on 127.0.0.1:63347
+1649586628472	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63348" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilefq6Idb"
+1649586628777	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilefq6Idb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63348/devtools/browser/8aebfc5a-1a24-489b-97d4-f3779e05a948
+1649586630072	Marionette	INFO	Listening on port 63353
+1649586630551	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649586635435	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649586771507	geckodriver	INFO	Listening on 127.0.0.1:63518
+1649586774630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63519" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileFvLkcV"
+1649586774981	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofileFvLkcV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63519/devtools/browser/deee12d7-ad75-493f-a274-2decd393a9bc
+1649586776202	Marionette	INFO	Listening on port 63524
+1649586776720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649586781084	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1649586783117	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649586920457	geckodriver	INFO	Listening on 127.0.0.1:65106
+1649586923578	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "65107" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilehYiOBu"
+1649586923916	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilehYiOBu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65107/devtools/browser/cbb43743-84cf-4236-8a01-26edd8dcf689
+1649586925133	Marionette	INFO	Listening on port 65112
+1649586925147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649586929103	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649591118981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591236458	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591350393	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591464667	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591579048	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591693685	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591801901	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591898428	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649591995354	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592091553	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592179075	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649592266917	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592354285	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592441919	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592529330	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592613279	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592697483	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592781089	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592864967	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649592948838	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593032614	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593116913	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593201161	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593285562	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593369736	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593454145	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593538330	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593621954	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593705478	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593789740	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649593874154	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1649593962790	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594050234	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594137282	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594224663	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594311800	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594399089	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594486671	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594574233	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594661881	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594749411	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649594836822	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null

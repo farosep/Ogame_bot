@@ -70,8 +70,12 @@ def decide_what_tech_to_research(driver, data):
         research_technology(driver, data, 'espionageTechnology')
     elif data.Available_technologies['computerTechnology']:
         research_technology(driver, data, 'computerTechnology')
-    elif data.Available_technologies['energyTechnology']:
+    elif data.Available_technologies['energyTechnology'] and data.Technologies_levels < 8:
         research_technology(driver, data, 'energyTechnology')
+    elif data.Available_technologies['laserTechnology'] and data.Technologies_levels < 12:
+        research_technology(driver, data, 'laserTechnology')
+    elif data.Available_technologies['combustionDriveTechnology']:
+        research_technology(driver, data, 'combustionDriveTechnology')
     elif data.Available_technologies['weaponsTechnology']:
         research_technology(driver, data, 'weaponsTechnology')
     elif data.Available_technologies['armorTechnology']:

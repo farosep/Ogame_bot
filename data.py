@@ -1,6 +1,6 @@
 
 
-class data():
+class Data():
     #  Ресурсы игрока
     resources = {
         'metal': None,
@@ -135,7 +135,9 @@ class data():
         'espionageTechnology': 'span.espionageTechnology > button',
         'computerTechnology': 'span.computerTechnology > button',
         'weaponsTechnology': 'span.weaponsTechnology > button',
-        'armorTechnology': 'span.armorTechnology > button'
+        'armorTechnology': 'span.armorTechnology > button',
+        'laserTechnology': 'span.laserTechnology > button',
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > button'
     }
 
     #  Уровни технологий
@@ -144,16 +146,20 @@ class data():
         'espionageTechnology': 0,
         'computerTechnology': 0,
         'weaponsTechnology': 0,
-        'armorTechnology': 0
+        'armorTechnology': 0,
+        'laserTechnology': 0,
+        'combustionDriveTechnology': 0
     }
 
     #  Ссылки на уровни технологий
-    Technologies_levels_refs ={
+    Technologies_levels_refs = {
         'energyTechnology': 'span.energyTechnology > span:nth-child(2) > span:nth-child(1)',
         'espionageTechnology': 'span.espionageTechnology > span:nth-child(2) > span:nth-child(1)',
         'computerTechnology': 'span.computerTechnology > span:nth-child(2) > span:nth-child(1)',
         'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(2) > span:nth-child(1)',
-        'armorTechnology': 'span.armorTechnology > span:nth-child(2) > span:nth-child(1)'
+        'armorTechnology': 'span.armorTechnology > span:nth-child(2) > span:nth-child(1)',
+        'laserTechnology': 'span.laserTechnology > span:nth-child(2) > span:nth-child(1)',
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(2) > span:nth-child(1)'
     }
 
     #  Ссылки на заблокированные уровни технологий
@@ -162,7 +168,9 @@ class data():
         'espionageTechnology': 'span.espionageTechnology > span:nth-child(1) > span:nth-child(1)',
         'computerTechnology': 'span.computerTechnology > span:nth-child(1) > span:nth-child(1)',
         'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(1) > span:nth-child(1)',
-        'armorTechnology': 'span.armorTechnology > span:nth-child(1) > span:nth-child(1)'
+        'armorTechnology': 'span.armorTechnology > span:nth-child(1) > span:nth-child(1)',
+        'laserTechnology': 'span.laserTechnology > span:nth-child(1) > span:nth-child(1)',
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(1) > span:nth-child(1)'
     }
 
     #  Технологии которые можно улучшить
@@ -171,5 +179,13 @@ class data():
         'espionageTechnology': False,
         'computerTechnology': False,
         'weaponsTechnology': False,
-        'armorTechnology': False
+        'armorTechnology': False,
+        'laserTechnology': False,
+        'combustionDriveTechnology': False
     }
+
+    Login = '665577448833a@gmail.com'
+    Password = 'LoginAdmin1765'
+
+    Login1 = '2211pozan1122@gmail.com'
+    Password1 = 'LoginAdmin1765'

@@ -3,17 +3,19 @@ import Decider
 import InfoScrapper
 from Login import Login
 import time
-from data import data
+from data import Data
+import datetime
 
 
 class StartGame:
     def __init__(self, data):
         self.driver = webdriver.Firefox()
         self.data = data
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(3)
 
     def start(self):
-        Login(self.driver)
+        Login(self.driver, self.data)
+        print(f'Залогинились успешно: time ({datetime.datetime.now().strftime("%H:%M:%S")})')
         while True:
             #  собираем информацию
             InfoScrapper.get_all_info(self.driver, self.data)
@@ -22,6 +24,6 @@ class StartGame:
             time.sleep(30)
 
 
-d = data()
+d = Data()
 a = StartGame(d)
 a.start()
