@@ -1425,3 +1425,56 @@ TimedPromise@chrome://remote/content/marionette/sync.js:220:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
 JavaScript error: https://gf1.geo.gfsrv.net/cdn61/d82373bf783b80c92e2ce9d6264a05.js, line 26906: TypeError: can't access property "removeClass", this._tooltip is null
+1649599937883	geckodriver	INFO	Listening on 127.0.0.1:57556
+1649599940969	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "57557" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilefqsAHX"
+1649599941295	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofilefqsAHX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57557/devtools/browser/2c29a47a-124d-45cd-8323-c9bbd61fa33d
+1649599942509	Marionette	INFO	Listening on port 57562
+1649599943036	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649599947487	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649605907838	geckodriver	INFO	Listening on 127.0.0.1:64766
+1649605910929	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "64767" "-no-remote" "-profile" "C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile6RJeZT"
+1649605911263	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\faros\\AppData\\Local\\Temp\\rust_mozprofile6RJeZT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64767/devtools/browser/a0794c51-8874-4059-94c8-ec9ebea2622b
+1649605912581	Marionette	INFO	Listening on port 64772
+1649605912986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://lobby.ogame.gameforge.com"
+1649605917139	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+JavaScript warning: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js, line 0: https://s146-ru.ogame.gameforge.com:19753/socket.io/socket.io.js is being assigned a //# sourceMappingURL, but already has one
+1649605983984	Marionette	INFO	Stopped listening on port 64772
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
