@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from colorama import Fore, Style
 
 
 def decide_what_to_do(driver, data):
@@ -8,15 +9,25 @@ def decide_what_to_do(driver, data):
 
 
 def build_resource(driver, data, building_name):
-    driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies')
-    driver.find_element(By.CSS_SELECTOR, data.Upgrade_mines_buttons[building_name]).click()
-    print(f'{building_name} mine was built')
+    try:
+        driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies')
+        driver.find_element(By.CSS_SELECTOR, data.Upgrade_mines_buttons[building_name]).click()
+        print(Fore.BLUE + f'{building_name} mine was built')
+        print(Style.RESET_ALL)
+    except:
+        print(Fore.RED + f'{building_name} Mine was NOT built')
+        print(Style.RESET_ALL)
 
 
 def build_factory(driver, data, building_name):
-    driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities')
-    driver.find_element(By.CSS_SELECTOR, data.Upgrade_factory_refs[building_name]).click()
-    print(f'{building_name} facility  was built')
+    try:
+        driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities')
+        driver.find_element(By.CSS_SELECTOR, data.Upgrade_factory_refs[building_name]).click()
+        print(Fore.BLUE + f'{building_name} facility  was built')
+        print(Style.RESET_ALL)
+    except:
+        print(Fore.RED + f'{building_name} facility was NOT built')
+        print(Style.RESET_ALL)
 
 
 def decide_what_mine_to_build(driver, data):
@@ -85,7 +96,12 @@ def decide_what_tech_to_research(driver, data):
 
 
 def research_technology(driver, data, research_name):
-    driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=research')
-    driver.find_element(By.CSS_SELECTOR, data.Technologies_upgrade_buttons[research_name]).click()
-    print(f'{research_name} research was started')
-    data.Factory_available_to_build['researchLaboratory'] = False
+    try:
+        driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=research')
+        driver.find_element(By.CSS_SELECTOR, data.Technologies_upgrade_buttons[research_name]).click()
+        print(Fore.BLUE + f'{research_name} research was started')
+        print(Style.RESET_ALL)
+        data.Factory_available_to_build['researchLaboratory'] = False
+    except:
+        print(Fore.RED + f'{research_name} facility was NOT built')
+        print(Style.RESET_ALL)

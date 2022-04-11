@@ -137,7 +137,8 @@ class Data():
         'weaponsTechnology': 'span.weaponsTechnology > button',
         'armorTechnology': 'span.armorTechnology > button',
         'laserTechnology': 'span.laserTechnology > button',
-        'combustionDriveTechnology': 'span.combustionDriveTechnology > button'
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > button',
+        'impulseDriveTechnology': 'span.impulseDriveTechnology > button'
     }
 
     #  Уровни технологий
@@ -148,7 +149,8 @@ class Data():
         'weaponsTechnology': 0,
         'armorTechnology': 0,
         'laserTechnology': 0,
-        'combustionDriveTechnology': 0
+        'combustionDriveTechnology': 0,
+        'impulseDriveTechnology': 0
     }
 
     #  Ссылки на уровни технологий
@@ -159,7 +161,8 @@ class Data():
         'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(2) > span:nth-child(1)',
         'armorTechnology': 'span.armorTechnology > span:nth-child(2) > span:nth-child(1)',
         'laserTechnology': 'span.laserTechnology > span:nth-child(2) > span:nth-child(1)',
-        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(2) > span:nth-child(1)'
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(2) > span:nth-child(1)',
+        'impulseDriveTechnology': 'span.impulseDriveTechnology > span:nth-child(2) > span:nth-child(1)'
     }
 
     #  Ссылки на заблокированные уровни технологий
@@ -170,7 +173,8 @@ class Data():
         'weaponsTechnology': 'span.weaponsTechnology > span:nth-child(1) > span:nth-child(1)',
         'armorTechnology': 'span.armorTechnology > span:nth-child(1) > span:nth-child(1)',
         'laserTechnology': 'span.laserTechnology > span:nth-child(1) > span:nth-child(1)',
-        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(1) > span:nth-child(1)'
+        'combustionDriveTechnology': 'span.combustionDriveTechnology > span:nth-child(1) > span:nth-child(1)',
+        'impulseDriveTechnology': 'span.impulseDriveTechnology > span:nth-child(1) > span:nth-child(1)'
     }
 
     #  Технологии которые можно улучшить
@@ -181,7 +185,8 @@ class Data():
         'weaponsTechnology': False,
         'armorTechnology': False,
         'laserTechnology': False,
-        'combustionDriveTechnology': False
+        'combustionDriveTechnology': False,
+        'impulseDriveTechnology': False
     }
 
     Login = '665577448833a@gmail.com'

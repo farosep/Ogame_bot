@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
+
 def Login(driver,data):
     driver.get('https://lobby.ogame.gameforge.com/ru_RU/')
     driver.find_element(By.CSS_SELECTOR,
