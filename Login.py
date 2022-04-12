@@ -10,11 +10,11 @@ def Login(driver,data):
     driver.find_element(By.CSS_SELECTOR,
                             '.tabsList > li:nth-child(1)').click()
     driver.find_element(By.CSS_SELECTOR, 'div.inputWrap:nth-child(1) > div:nth-child(2) > input:nth-child(1)').click()
-    driver.find_element(By.CSS_SELECTOR, 'div.inputWrap:nth-child(1) > div:nth-child(2) > input:nth-child(1)').send_keys(data.Login1)
+    driver.find_element(By.CSS_SELECTOR, 'div.inputWrap:nth-child(1) > div:nth-child(2) > input:nth-child(1)').send_keys(data.Login)
     driver.find_element(By.CSS_SELECTOR,
                             'div.inputWrap:nth-child(2) > div:nth-child(2) > input:nth-child(1)').click()
     driver.find_element(By.CSS_SELECTOR,
-                            'div.inputWrap:nth-child(2) > div:nth-child(2) > input:nth-child(1)').send_keys(data.Password1)
+                            'div.inputWrap:nth-child(2) > div:nth-child(2) > input:nth-child(1)').send_keys(data.Password)
     a = driver.find_element(By.CSS_SELECTOR,
                             'button.button:nth-child(1)')
     a.click()
