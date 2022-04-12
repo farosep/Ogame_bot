@@ -48,10 +48,10 @@ class Storage(Building):
                                f'time ({datetime.datetime.now().strftime("%H:%M:%S")})')
                 print(Style.RESET_ALL)
 
-    def try_to_build(self):
-        if (self.capacity < self.resource or self.capacity < self.resource_income * 8) and self.available_to_upgrade:
-            super().try_to_build()
-            return True
+    def try_to_upgrade(self):
+        if (self.capacity < self.resource or self.capacity < self.resource_income * 8):
+            if super().try_to_upgrade():
+                return True
         return False
 
 
@@ -82,7 +82,7 @@ class DeuteriumStorage(Storage):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.deuteriumStorage > button:nth-child(1)'
         self.name = 'deuteriumStorage'
-        self.max_capacity_ref = 'td.left2:nth-child(4) > span:nth-child(1)'
+        self.capacity_ref = 'td.left2:nth-child(4) > span:nth-child(1)'
         self.overexcited_capacity_ref = 'td.overmark:nth-child(4) > span'
         self.resource_ref = 'resources_deuterium'
         self.resource_income_ref = '.summary > td:nth-child(4) > span:nth-child(1)'
@@ -94,7 +94,7 @@ class SolarStorage(Storage):
         self.resource_ref = 'resources_energy'
         self.name = 'energy'
 
-    def try_to_build(self):
+    def try_to_upgrade(self):
         return False
 
     def get_resource_capacity(self):

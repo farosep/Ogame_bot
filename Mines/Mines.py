@@ -9,9 +9,9 @@ class SolarMine(Building):
         self.name = 'SolarMine'
 
     def try_to_build(self):
-        if self.data.Storages['solarStorage'].resource <= 0 and self.available_to_upgrade:
-            super().try_to_build()
-            return True
+        if self.data.Storages['solarStorage'].resource <= 0:
+            if super().try_to_upgrade():
+                return True
         return False
 
     def get_level(self):
@@ -29,10 +29,9 @@ class MetalMine(Building):
         self.blocked_level_ref = 'span.metalMine > span:nth-child(1) > span:nth-child(1)'
 
     def try_to_build(self):
-        if self.data.Storages['solarStorage'].resource > 0 and self.level < self.data.Mines['CrystalMine'].level+2 \
-                and self.available_to_upgrade:
-            super().try_to_build()
-            return True
+        if self.data.Storages['solarStorage'].resource > 0 and self.level < self.data.Mines['CrystalMine'].level+2:
+            if super().try_to_upgrade():
+                return True
         return False
 
 
@@ -45,10 +44,9 @@ class CrystallMine(Building):
         self.blocked_level_ref = 'span.crystalMine > span:nth-child(1) > span:nth-child(1)'
 
     def try_to_build(self):
-        if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['DeuteriumMine'].level + 3\
-                and self.available_to_upgrade:
-            super().try_to_build()
-            return True
+        if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['DeuteriumMine'].level + 3:
+            if super().try_to_upgrade():
+                return True
         return False
 
 
@@ -61,8 +59,7 @@ class DeuteriumMine(Building):
         self.blocked_level_ref = 'span.deuteriumSynthesizer > span:nth-child(1) > span:nth-child(1)'
 
     def try_to_build(self):
-        if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['CrystalMine'].level - 3 \
-                and self.available_to_upgrade:
-            super().try_to_build()
-            return True
+        if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['CrystalMine'].level - 3:
+            if super().try_to_upgrade():
+                return True
         return False

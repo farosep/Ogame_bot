@@ -15,16 +15,18 @@ class Building:
         self.available_to_upgrade = False
         self.page = 'https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies'
 
-    def try_to_build(self):
-        try:
-            self.driver.get(self.page)
-            self.driver.find_element(By.CSS_SELECTOR, self.ref_to_upgrade_button).click()
-            print(Fore.BLUE + f'{self.name} mine was built')
-            print(Style.RESET_ALL)
-            return True
-        except:
-            print(Fore.RED + f'{self.name} Mine was NOT built')
-            print(Style.RESET_ALL)
+    def try_to_upgrade(self):
+        if self.available_to_upgrade:
+            try:
+                self.driver.get(self.page)
+                self.driver.find_element(By.CSS_SELECTOR, self.ref_to_upgrade_button).click()
+                print(Fore.BLUE + f'{self.name} mine was built')
+                print(Style.RESET_ALL)
+                return True
+            except:
+                print(Fore.RED + f'{self.name} Mine was NOT built')
+                print(Style.RESET_ALL)
+            return False
 
     def get_info(self):
         self.get_level()
