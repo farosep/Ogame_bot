@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 import datetime

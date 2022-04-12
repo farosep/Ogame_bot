@@ -1,5 +1,5 @@
-from selenium.webdriver.common.by import By
-from colorama import Fore, Style
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 
 def decide_what_to_do(data):

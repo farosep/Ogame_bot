@@ -1,6 +1,7 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import datetime
-from selenium.webdriver.common.by import By
-from colorama import Fore, Style
+
 
 
 # Получение данных

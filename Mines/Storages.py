@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from Building import Building
 from selenium.webdriver.common.by import By
 from colorama import Fore, Style
