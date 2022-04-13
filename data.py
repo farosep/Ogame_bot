@@ -52,6 +52,7 @@ class Data:
 
     }
 
+    Server = 'Tarazed'
 
     Login = '665577448833a@gmail.com'
     Password = 'LoginAdmin1765'

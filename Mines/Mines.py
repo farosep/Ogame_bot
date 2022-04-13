@@ -25,7 +25,6 @@ class MetalMine(Building):
         super().__init__(driver, data)
         self.data = data
         self.ref_to_upgrade_button = 'span.metalMine > button:nth-child(1)'
-        self.crystalmine = data.Mines['CrystalMine']
         self.name = 'MetalMine'
         self.level_ref = 'span.metalMine > span:nth-child(2) > span:nth-child(1)'
         self.blocked_level_ref = 'span.metalMine > span:nth-child(1) > span:nth-child(1)'

@@ -6,7 +6,7 @@ import InfoScrapper
 from Login import Login
 import datetime
 from data import Data
-
+from selenium.webdriver.common.by import By
 
 
 
