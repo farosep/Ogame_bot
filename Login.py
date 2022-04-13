@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 
-def Login(driver,data):
+def Login(driver, data):
     driver.get('https://lobby.ogame.gameforge.com/ru_RU/')
     driver.find_element(By.CSS_SELECTOR,
                             '.tabsList > li:nth-child(1)').click()

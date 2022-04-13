@@ -1,36 +1,55 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+from Mines.Mines import *
+from Mines.Storages import *
+from Factories.Factories import *
+from Technologies.Technology import *
+
 
 class Data:
+    def __init__(self, driver):
+        self.driver = driver
+        self.set_objects_in_dicts()
+
+    def set_objects_in_dicts(self):
+        #  Шахты
+        self.Mines['MetalMine'] = MetalMine(self.driver, self)
+        self.Mines['CrystalMine'] = CrystallMine(self.driver, self)
+        self.Mines['DeuteriumMine'] = DeuteriumMine(self.driver, self)
+        self.Mines['SolarMine'] = SolarMine(self.driver, self)
+        #  Хранилища
+        self.Storages['metalStorage'] = MetalStorage(self.driver, self)
+        self.Storages['crystalStorage'] = CrystalStorage(self.driver, self)
+        self.Storages['deuteriumStorage'] = DeuteriumStorage(self.driver, self)
+        self.Storages['solarStorage'] = SolarStorage(self.driver, self)
+        # Фабрики
+        self.Factories['roboticsFactory'] = RoboticFactory(self.driver, self)
+        self.Factories['researchLaboratory'] = ResearchLaboratory(self.driver, self)
+        self.Factories['shipyard'] = Shipyard(self.driver, self)
+        #  Технологии
+        self.Technologies['energyTechnology'] = EnergyTechnology(self.driver, self)
+        self.Technologies['espionageTechnology'] = EspionageTechnology(self.driver, self)
+        self.Technologies['computerTechnology'] = ComputerTechnology(self.driver, self)
+        self.Technologies['weaponsTechnology'] = WeaponsTechnology(self.driver, self)
+        self.Technologies['armorTechnology'] = ArmorTechnology(self.driver, self)
+        self.Technologies['laserTechnology'] = LaserTechnology(self.driver, self)
+        self.Technologies['combustionDriveTechnology'] = CombustionDriveTechnology(self.driver, self)
+        self.Technologies['impulseDriveTechnology'] = ImpulseDriveTechnology(self.driver, self)
+
     Mines = {
-        'MetalMine': '',
-        'CrystalMine': '',
-        'DeuteriumMine': '',
-        'SolarMine': ''
+
     }
 
     Storages = {
-        'metalStorage': '',
-        'crystalStorage': '',
-        'deuteriumStorage': '',
-        'solarStorage': ''
+
     }
 
     Factories = {
-        'roboticsFactory':'',
-        'researchLaboratory': '',
-        'shipyard': ''
+
     }
 
     Technologies = {
-        'energyTechnology': '',
-        'espionageTechnology': '',
-        'computerTechnology': '',
-        'weaponsTechnology': '',
-        'armorTechnology': '',
-        'laserTechnology': '',
-        'combustionDriveTechnology': '',
-        'impulseDriveTechnology': ''
+
     }
 
 
