@@ -46,3 +46,13 @@ class Shipyard(Factory):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.shipyard > button'
         self.name = 'shipyard'
+        self.available_to_use = False
+        self.available_to_use_ref = 'a.tpd-hideOnClickOutside:nth-child(1)'
+
+    def get_available_to_use(self):
+        try:
+            if self.driver.find_element(By.CSS_SELECTOR, self.available_to_use_ref):
+                self.available_to_use = True
+            self.available_to_use = False
+        except:
+            self.available_to_use = False

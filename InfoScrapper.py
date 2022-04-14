@@ -3,7 +3,6 @@
 import datetime
 
 
-
 # Получение данных
 def get_all_info(driver, data):
     get_mines_info(driver, data)

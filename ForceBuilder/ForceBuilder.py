@@ -13,6 +13,10 @@ class ForceUnit:
         self.available = False
         self.build_button = ''
         self.need_amount = 0
+        self.cost_in_metal = 0
+        self.cost_in_crystal = 0
+        self.cost_in_deuterium = 0
+        self.resource_hold = 0
 
     def get_amount(self):
         try:
@@ -32,11 +36,11 @@ class ForceUnit:
             self.available = False
 
     def try_to_build(self):
-        if self.available:
+        if self.available and self.data.Factories['shipyard'].available_to_use and self.need_amount < self.amount:
             try:
                 self.driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=shipyard')
                 self.driver.find_element(By.CSS_SELECTOR, self.build_button).click()
-                self.driver.find_element(By.CSS_SELECTOR, '#build_amount').send_keys(self.need_amount)
+                self.driver.find_element(By.CSS_SELECTOR, '#build_amount').send_keys(f'{self.need_amount - self.amount}')
                 self.driver.find_element(By.CSS_SELECTOR, self.build_button).click('span.tooltip')
             except:
                 print(Fore.RED + f'Не смогли построить {self.need_amount} {self.name} '
@@ -44,6 +48,8 @@ class ForceUnit:
                 print(Style.RESET_ALL)
 
     def get_need_amount(self):
-        self.data.Storages['metalStorage'].resource_income
-        self.data.Storages['metalStorage'].resource_income
-        self.data.Storages['metalStorage'].resource_income
+        self.need_amount = (self.data.Storages['metalStorage'].resource_income + self.data.Storages['crystalStorage'].resource_income * 2
+        + self.data.Storages['deuteriumStorage'].resource_income * 3) / (self.cost_in_metal + self.cost_in_crystal*2
+                                                                         + self.cost_in_deuterium*3)
+
+
