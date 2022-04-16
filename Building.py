@@ -6,8 +6,8 @@ import datetime
 
 
 class Building:
-    def __init__(self, driver, data):
-        self.data = data
+    def __init__(self, driver, main_data):
+        self.main_data = main_data
         self.driver = driver
         self.ref_to_upgrade_button = ''
         self.level = 0
@@ -20,11 +20,11 @@ class Building:
             try:
                 self.driver.get(self.page)
                 self.driver.find_element(By.CSS_SELECTOR, self.ref_to_upgrade_button).click()
-                print(Fore.BLUE + f'{self.name} mine was built')
+                print(Fore.BLUE + f'{self.name} mine was built {datetime.datetime.now().strftime("%H:%M:%S")}')
                 print(Style.RESET_ALL)
                 return True
             except:
-                print(Fore.RED + f'{self.name} Mine was NOT built')
+                print(Fore.RED + f'{self.name} Mine was NOT built {datetime.datetime.now().strftime("%H:%M:%S")}')
                 print(Style.RESET_ALL)
             return False
 

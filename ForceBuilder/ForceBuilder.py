@@ -51,7 +51,8 @@ class ForceUnit:
                 print(Style.RESET_ALL)
         return False
 
-    def get_need_amount(self):
-        self.need_amount = (self.data.Storages['metalStorage'].resource_income + self.data.Storages['crystalStorage'].resource_income * 2
-        + self.data.Storages['deuteriumStorage'].resource_income * 3) / (self.cost_in_metal + self.cost_in_crystal*2
-                                                                         + self.cost_in_deuterium*3)
+    def get_need_amount(self, main_data):
+        self.need_amount = (self.data.Storages['metalStorage'].resource_income
+                            + self.data.Storages['crystalStorage'].resource_income * 2
+                            + self.data.Storages['deuteriumStorage'].resource_income * 3) \
+                           / (self.cost_in_metal + self.cost_in_crystal*2 + self.cost_in_deuterium*3) * 10
