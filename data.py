@@ -4,20 +4,31 @@ from Mines.Mines import *
 from Mines.Storages import *
 from Factories.Factories import *
 from Technologies.Technology import *
-from ForceBuilder.Ships import *
+from force_builder.Ships import *
 
 
-class Main_data:
-    def __init__(self, driver):
+class Colony:
+    def __init__(self, driver, data):
+        self.colony_data = data
         self.driver = driver
-        self.set_objects_in_dicts()
+        self.ref = ''
 
-    def set_objects_in_dicts(self):
 
-        #  Технологии
+class MainData:
+    """
+        Object that contains data independent of planets and actual for user
+    """
+    def __init__(self, driver) -> None:
+        self.driver = driver
+        self.set_tech_in_dicts()
+
+    def set_tech_in_dicts(self):
+        """
+            Generate technology objects and set them on their places in dict
+        :return: nothing
+        """
         self.Technologies['impulseDriveTechnology'] = ImpulseDriveTechnology(self.driver, self)
         self.Technologies['combustionDriveTechnology'] = CombustionDriveTechnology(self.driver, self)
-
         self.Technologies['ionTechnology'] = IonTechnology(self.driver, self)
         self.Technologies['laserTechnology'] = LaserTechnology(self.driver, self)
         self.Technologies['energyTechnology'] = EnergyTechnology(self.driver, self)
@@ -30,45 +41,51 @@ class Main_data:
         self.Technologies['armorTechnology'] = ArmorTechnology(self.driver, self)
         self.Technologies['shieldingTechnology'] = ShieldingTechnology(self.driver, self)
 
-    Technologies = {
+    Technologies: dict[str, Technology] = {
 
     }
 
-
-    Colonies = {
+    Colonies: dict[str, Colony] = {
 
     }
 
-    Server = 'Tarazed'
+    Server: str = 'Tarazed'
 
-    Login = '665577448833a@gmail.com'
-    Password = 'LoginAdmin1765'
+    Login: str = '665577448833a@gmail.com'
+    Password: str = 'LoginAdmin1765'
 
-    Login1 = '2211pozan1122@gmail.com'
-    Password1 = 'LoginAdmin1765'
+    Login1: str = '2211pozan1122@gmail.com'
+    Password1: str = 'LoginAdmin1765'
 
 
-class Colony_data:
+class ColonyData:
+    """
+        Object that contains data dependent from planet ( buildings, resources and e.t.c)
+    """
     def __init__(self, driver):
         self.driver = driver
         self.set_objects_in_dicts()
 
     def set_objects_in_dicts(self):
-        #  Шахты
+        """
+            Generate Mines, storages, fabrics and ships objects Set them in dicts
+        :return: nothing
+        """
+        #  Mines
         self.Mines['metalMine'] = MetalMine(self.driver, self)
         self.Mines['crystalMine'] = CrystallMine(self.driver, self)
         self.Mines['deuteriumSynthesizer'] = DeuteriumMine(self.driver, self)
         self.Mines['SolarMine'] = SolarMine(self.driver, self)
-        #  Хранилища
+        #  Storages
         self.Storages['metalStorage'] = MetalStorage(self.driver, self)
         self.Storages['crystalStorage'] = CrystalStorage(self.driver, self)
         self.Storages['deuteriumStorage'] = DeuteriumStorage(self.driver, self)
         self.Storages['solarStorage'] = SolarStorage(self.driver, self)
-        # Фабрики
+        # Fabrics
         self.Factories['roboticsFactory'] = RoboticFactory(self.driver, self)
         self.Factories['researchLaboratory'] = ResearchLaboratory(self.driver, self)
         self.Factories['shipyard'] = Shipyard(self.driver, self)
-        # Корабли
+        # Ships
         self.Ships['fighterLight'] = FighterLight(self.driver, self)
         self.Ships['fighterHeavy'] = FighterHeavy(self.driver, self)
         self.Ships['cruiser'] = Cruiser(self.driver, self)
@@ -82,25 +99,18 @@ class Colony_data:
         self.Ships['resbuggy'] = Resbuggy(self.driver, self)
         self.Ships['colonyShip'] = ColonyShip(self.driver, self)
 
-    Mines = {
+    Mines: dict[str, Building] = {
 
     }
 
-    Storages = {
+    Storages: dict[str, Building] = {
 
     }
 
-    Factories = {
+    Factories: dict[str, Building] = {
 
     }
 
-    Ships = {
+    Ships: dict[str, ForceUnit] = {
 
     }
-
-
-class Colony:
-    def __init__(self, driver, data):
-        self.colony_data = data
-        self.driver = driver
-        self.ref = ''

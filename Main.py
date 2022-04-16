@@ -2,38 +2,53 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import Decider
-import InfoScrapper
+import info_scrapper
 from Login import Login
 import datetime
-from data import Main_data, Colony, Colony_data
+from data import MainData, Colony, ColonyData
 from selenium.webdriver.common.by import By
-from Flyer.Colonise import colonyse_planet, get_best_system_position
+
 
 class StartGame:
-    def __init__(self):
+    """
+        Base object, to start bot
+    """
+    def __init__(self) -> None:
+        """
+            Initialise browser driver and MainData object
+        """
         self.driver = webdriver.Firefox()
-        self.main_data = Main_data(self.driver)
+        self.main_data = MainData(self.driver)
         self.driver.implicitly_wait(3)
         self.login = Login(self.driver, self.main_data)
 
-    def start(self):
+    def start(self) -> None:
+        """
+            Starts with login in game, then go to infinity circle of getting info and building
+        :return: None
+        """
         self.login.get_in_account()
-        print(f'Залогинились успешно: time ({datetime.datetime.now().strftime("%H:%M:%S")})')
-        colonyse_planet(self.driver)
+        print(f"Login complete at time ({datetime.datetime.now().strftime('%H:%M:%S')})")
         self.get_colonies(self.main_data)
         while True:
             for i in self.main_data.Colonies:
-                #  собираем информацию
-                InfoScrapper.get_all_info(self.driver, self.main_data, self.main_data.Colonies[i].colony_data)
+                #  get information
+                info_scrapper.get_all_info(self.driver, self.main_data, self.main_data.Colonies[i].colony_data)
+                #  decide what to build or research
                 Decider.decide_what_to_do(self.main_data, self.main_data.Colonies[i].colony_data)
-            if self.driver.current_url == 'https://lobby.ogame.gameforge.com/ru_RU/hub':
+            if self.driver.current_url == "https://lobby.ogame.gameforge.com/ru_RU/hub":
                 self.login.get_in_server()
 
-    def get_colonies(self, main_data):
-        a = self.driver.find_elements(By.XPATH, '//*[@id="planetList"]//child::div')
-        for i in range(len(a)):
-            main_data.Colonies[f'Colony{i + 1}'] = Colony(self.driver, Colony_data(self.driver))
-            main_data.Colonies[f'Colony{i + 1}'].ref = f'//*[@id="planetList"]//child::div[{i + 1}]'
+    def get_colonies(self, main_data: MainData) -> None:
+        """
+            Function that add colonies and generate colony_data for all colonies
+        :param main_data: Object of MainDataClass
+        """
+        colonies_list: list = self.driver.find_elements(By.XPATH, "//*[@id='planetList']//child::div")
+        for i in range(len(colonies_list)):
+            main_data.Colonies[f"Colony{i + 1}"] = Colony(self.driver, ColonyData(self.driver))
+            main_data.Colonies[f"Colony{i + 1}"].ref = f"//*[@id='planetList']//child::div[{i + 1}]"
 
-a = StartGame()
+
+a: StartGame = StartGame()
 a.start()

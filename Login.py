@@ -4,20 +4,28 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from data import MainData
 
 
 class Login:
-    def __init__(self, driver, data):
+    """
+        Class to get in game in start, and after disconnect
+    """
+    def __init__(self, driver, main_data: MainData) -> None:
         self.driver = driver
-        self.data = data
+        self.data = main_data
 
-    def get_in_server(self):
+    def get_in_server(self) -> None:
+        """
+            This func gets player from hub to selected server
+        :return: None
+        """
         self.driver.find_element(By.CSS_SELECTOR, 'button.button:nth-child(1)').click()
         self.driver.find_element(By.XPATH,
-                            f"//*[text()='{self.data.Server}']//parent::div//following-sibling::div[7]//button").click()
+                                 f"//*[text()='{self.data.Server}']//parent::div//following-sibling::div[7]//button"
+                                 ).click()
         time.sleep(2)
         self.driver.switch_to.window(self.driver.window_handles[1])
-        self.driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=supplies')
 
     def get_in_account(self):
         self.driver.get('https://lobby.ogame.gameforge.com/ru_RU/')

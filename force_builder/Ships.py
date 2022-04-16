@@ -1,8 +1,17 @@
-from ForceBuilder.ForceBuilder import ForceUnit
+from force_builder.force_builder import ForceUnit
+from data import ColonyData
 
 
 class FighterLight(ForceUnit):
-    def __init__(self, driver, data):
+    """
+        Light fighter object with its own params like cost
+    """
+    def __init__(self, driver, data: ColonyData):
+        """
+
+        :param driver: Browser driver for selenium
+        :param data: colony_data object
+        """
         super().__init__(driver, data)
         self.amount_ref = 'span.fighterLight > span:nth-child(1) > span:nth-child(1)'
         self.name = 'fighterLight'
@@ -12,7 +21,7 @@ class FighterLight(ForceUnit):
 
 
 class FighterHeavy(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.fighterHeavy > span:nth-child(1) > span:nth-child(1)'
         self.name = 'fighterHeavy'
@@ -22,7 +31,7 @@ class FighterHeavy(ForceUnit):
 
 
 class Cruiser(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.cruiser > span:nth-child(1) > span:nth-child(1)'
         self.name = 'cruiser'
@@ -33,7 +42,7 @@ class Cruiser(ForceUnit):
 
 
 class Battleship(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.battleship > span:nth-child(1) > span:nth-child(1)'
         self.name = 'battleship'
@@ -43,7 +52,7 @@ class Battleship(ForceUnit):
 
 
 class Interceptor(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.interceptor > span:nth-child(1) > span:nth-child(1)'
         self.name = 'interceptor'
@@ -54,7 +63,7 @@ class Interceptor(ForceUnit):
 
 
 class Bomber(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.bomber > span:nth-child(1) > span:nth-child(1)'
         self.name = 'bomber'
@@ -65,7 +74,7 @@ class Bomber(ForceUnit):
 
 
 class Destroyer(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.destroyer > span:nth-child(1) > span:nth-child(1)'
         self.name = 'destroyer'
@@ -76,7 +85,7 @@ class Destroyer(ForceUnit):
 
 
 class Reaper(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.reaper > span:nth-child(1) > span:nth-child(1)'
         self.name = 'reaper'
@@ -89,7 +98,7 @@ class Reaper(ForceUnit):
 
 
 class Resbuggy(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.resbuggy > span:nth-child(1) > span:nth-child(1)'
         self.name = 'resbuggy'
@@ -100,7 +109,7 @@ class Resbuggy(ForceUnit):
 
 
 class EspionageProbe(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.espionageProbe > span:nth-child(1) > span:nth-child(1)'
         self.name = 'espionageProbe'
@@ -112,7 +121,7 @@ class EspionageProbe(ForceUnit):
 
 
 class TransporterSmall(ForceUnit):
-    def __init__(self, driver, data):
+    def __init__(self, driver, data: ColonyData):
         super().__init__(driver, data)
         self.amount_ref = 'span.transporterSmall > span:nth-child(1) > span:nth-child(1)'
         self.name = 'transporterSmall'
