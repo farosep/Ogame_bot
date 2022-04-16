@@ -7,7 +7,7 @@ from Login import Login
 import datetime
 from data import Main_data, Colony, Colony_data
 from selenium.webdriver.common.by import By
-
+from Flyer.Colonise import colonyse_planet, get_best_system_position
 
 class StartGame:
     def __init__(self):
@@ -19,6 +19,7 @@ class StartGame:
     def start(self):
         self.login.get_in_account()
         print(f'Залогинились успешно: time ({datetime.datetime.now().strftime("%H:%M:%S")})')
+        colonyse_planet(self.driver)
         self.get_colonies(self.main_data)
         while True:
             for i in self.main_data.Colonies:

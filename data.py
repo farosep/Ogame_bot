@@ -24,6 +24,7 @@ class Main_data:
 
         self.Technologies['espionageTechnology'] = EspionageTechnology(self.driver, self)
         self.Technologies['computerTechnology'] = ComputerTechnology(self.driver, self)
+        self.Technologies['astrophysicsTechnology'] = AstrophysicsTechnology(self.driver, self)
 
         self.Technologies['weaponsTechnology'] = WeaponsTechnology(self.driver, self)
         self.Technologies['armorTechnology'] = ArmorTechnology(self.driver, self)

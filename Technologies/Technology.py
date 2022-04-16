@@ -106,3 +106,9 @@ class IonTechnology(Technology):
         super().__init__(driver, main_data)
         self.ref_to_upgrade_button = 'span.ionTechnology > button'
         self.name = 'ionTechnology'
+
+class AstrophysicsTechnology(Technology):
+    def __init__(self, driver, main_data):
+        super().__init__(driver, main_data)
+        self.ref_to_upgrade_button = 'span.astrophysicsTechnology > button'
+        self.name = 'astrophysicsTechnology'
