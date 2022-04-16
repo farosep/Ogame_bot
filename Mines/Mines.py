@@ -8,7 +8,7 @@ class SolarMine(Building):
         super().__init__(driver, data)
         self.data = data
         self.ref_to_upgrade_button = 'span.solarPlant > button'
-        self.name = 'SolarMine'
+        self.name = 'solarPlant'
 
     def try_to_build(self):
         if self.data.Storages['solarStorage'].resource <= 0:
@@ -25,9 +25,7 @@ class MetalMine(Building):
         super().__init__(driver, data)
         self.data = data
         self.ref_to_upgrade_button = 'span.metalMine > button:nth-child(1)'
-        self.name = 'MetalMine'
-        self.level_ref = 'span.metalMine > span:nth-child(2) > span:nth-child(1)'
-        self.blocked_level_ref = 'span.metalMine > span:nth-child(1) > span:nth-child(1)'
+        self.name = 'metalMine'
 
     def try_to_build(self):
         if self.data.Storages['solarStorage'].resource > 0 and self.level < self.data.Mines['CrystalMine'].level+2:
@@ -40,9 +38,7 @@ class CrystallMine(Building):
     def __init__(self, driver, data):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.crystalMine > button:nth-child(1)'
-        self.name = 'CrystalMine'
-        self.level_ref = 'span.crystalMine > span:nth-child(2) > span:nth-child(1)'
-        self.blocked_level_ref = 'span.crystalMine > span:nth-child(1) > span:nth-child(1)'
+        self.name = 'crystalMine'
 
     def try_to_build(self):
         if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['DeuteriumMine'].level + 3:
@@ -55,9 +51,7 @@ class DeuteriumMine(Building):
     def __init__(self, driver, data):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.deuteriumSynthesizer > button:nth-child(1)'
-        self.name = 'DeuteriumMine'
-        self.level_ref = 'span.deuteriumSynthesizer > span:nth-child(2) > span:nth-child(1)'
-        self.blocked_level_ref = 'span.deuteriumSynthesizer > span:nth-child(1) > span:nth-child(1)'
+        self.name = 'deuteriumSynthesizer'
 
     def try_to_build(self):
         if self.data.Storages['solarStorage'].resource > 0 and self.level <= self.data.Mines['CrystalMine'].level - 3:

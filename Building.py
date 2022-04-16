@@ -10,8 +10,6 @@ class Building:
         self.data = data
         self.driver = driver
         self.ref_to_upgrade_button = ''
-        self.level_ref = ''
-        self.blocked_level_ref = ''
         self.level = 0
         self.name = ''
         self.available_to_upgrade = False
@@ -36,15 +34,12 @@ class Building:
 
     def get_level(self):
         try:
-            self.level = int(self.driver.find_element(By.CSS_SELECTOR, self.level_ref).text.replace('.', ''))
+            self.level = int(self.driver.find_element(By.CSS_SELECTOR,
+                                                      f'span.{self.name} > span').get_attribute('data-value'))
         except:
-            try:
-                self.level = int(self.driver.find_element(By.CSS_SELECTOR,
-                                                          self.blocked_level_ref).text.replace('.', ''))
-            except:
-                print(Fore.RED + f'Не смогли получить уровень {self.name} '
-                                 f'time ({datetime.datetime.now().strftime("%H:%M:%S")})')
-                print(Style.RESET_ALL)
+            print(Fore.RED + f'Не смогли получить уровень {self.name} time '
+                             f'({datetime.datetime.now().strftime("%H:%M:%S")})')
+            print(Style.RESET_ALL)
 
     def get_available(self):
         try:
@@ -52,3 +47,5 @@ class Building:
             self.available_to_upgrade = True
         except:
             self.available_to_upgrade = False
+
+

@@ -39,7 +39,17 @@ class ResearchLaboratory(Factory):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.researchLaboratory > button'
         self.name = 'researchLaboratory'
+        self.available_to_use_ref = '//*[contains(text(), "Не ведется никаких")]'
+        self.available_to_use = False
 
+    def get_available_to_use(self):
+        try:
+            if self.driver.find_element(By.XPATH, self.available_to_use_ref) is not None:
+                self.available_to_use = True
+            else:
+                self.available_to_use = False
+        except:
+            self.available_to_use = False
 
 class Shipyard(Factory):
     def __init__(self, driver, data):
@@ -47,12 +57,13 @@ class Shipyard(Factory):
         self.ref_to_upgrade_button = 'span.shipyard > button'
         self.name = 'shipyard'
         self.available_to_use = False
-        self.available_to_use_ref = 'a.tpd-hideOnClickOutside:nth-child(1)'
+        self.available_to_use_ref = '//*[contains(text(), "Корабли")]'
 
     def get_available_to_use(self):
         try:
-            if self.driver.find_element(By.CSS_SELECTOR, self.available_to_use_ref):
+            if self.driver.find_element(By.XPATH, self.available_to_use_ref) is not None:
                 self.available_to_use = True
-            self.available_to_use = False
+            else:
+                self.available_to_use = False
         except:
             self.available_to_use = False

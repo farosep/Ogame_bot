@@ -15,15 +15,18 @@ class StartGame:
         self.driver = webdriver.Firefox()
         self.data = Data(self.driver)
         self.driver.implicitly_wait(3)
+        self.login = Login(self.driver, self.data)
 
 
     def start(self):
-        Login(self.driver, self.data)
+        self.login.get_in_account()
         print(f'Залогинились успешно: time ({datetime.datetime.now().strftime("%H:%M:%S")})')
         while True:
             #  собираем информацию
             InfoScrapper.get_all_info(self.driver, self.data)
             Decider.decide_what_to_do(self.data)
+            if self.driver.current_url == 'https://lobby.ogame.gameforge.com/ru_RU/hub':
+                self.login.get_in_server()
 
 
 a = StartGame()

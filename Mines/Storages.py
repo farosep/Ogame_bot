@@ -39,16 +39,11 @@ class Storage(Building):
     def get_resource_capacity(self):
         try:
             self.capacity = int(
-                self.driver.find_element(By.CSS_SELECTOR, self.capacity_ref).text.replace('.', ''))
+                self.driver.find_element(By.XPATH, self.capacity_ref).text.replace('.', ''))
         except:
-            try:
-                self.capacity = int(
-                    self.driver.find_element(By.CSS_SELECTOR, self.overexcited_capacity_ref).text.replace('.', ''))
-            except:
-                print(
-                    Fore.RED + f'Не смогли получить размер хранилища {self.name}  '
+            print(Fore.RED + f'Не смогли получить размер хранилища {self.name}  '
                                f'time ({datetime.datetime.now().strftime("%H:%M:%S")})')
-                print(Style.RESET_ALL)
+            print(Style.RESET_ALL)
 
     def try_to_upgrade(self):
         if (self.capacity < self.resource or self.capacity < self.resource_income * 8):
@@ -62,8 +57,7 @@ class MetalStorage(Storage):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.metalStorage > button:nth-child(1)'
         self.name = 'metalStorage'
-        self.capacity_ref = 'td.normalmark:nth-child(2) > span:nth-child(1)'
-        self.overexcited_capacity_ref = 'td.overmark:nth-child(2) > span'
+        self.capacity_ref = '//*[contains(text(), "Вместимость")]//following-sibling::td[1]//child::span'
         self.resource_ref = 'resources_metal'
         self.resource_income_ref = '.summary > td:nth-child(2) > span:nth-child(1)'
 
@@ -73,8 +67,7 @@ class CrystalStorage(Storage):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.crystalStorage > button:nth-child(1)'
         self.name = 'crystalStorage'
-        self.capacity_ref = 'td.left2:nth-child(3) > span:nth-child(1)'
-        self.overexcited_capacity_ref = 'td.overmark:nth-child(3) > span'
+        self.capacity_ref = '//*[contains(text(), "Вместимость")]//following-sibling::td[2]//child::span'
         self.resource_ref = 'resources_crystal'
         self.resource_income_ref = '.summary > td:nth-child(3) > span:nth-child(1)'
 
@@ -84,8 +77,7 @@ class DeuteriumStorage(Storage):
         super().__init__(driver, data)
         self.ref_to_upgrade_button = 'span.deuteriumStorage > button:nth-child(1)'
         self.name = 'deuteriumStorage'
-        self.capacity_ref = 'td.left2:nth-child(4) > span:nth-child(1)'
-        self.overexcited_capacity_ref = 'td.overmark:nth-child(4) > span'
+        self.capacity_ref = '//*[contains(text(), "Вместимость")]//following-sibling::td[3]//child::span'
         self.resource_ref = 'resources_deuterium'
         self.resource_income_ref = '.summary > td:nth-child(4) > span:nth-child(1)'
 

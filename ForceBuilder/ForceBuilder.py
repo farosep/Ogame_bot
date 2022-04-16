@@ -29,27 +29,29 @@ class ForceUnit:
 
     def get_available(self):
         try:
-            if self.driver.find_element(By.CSS_SELECTOR, self.build_button).get_attribute('data-status') == 'on':
+            a = self.driver.find_element(By.CSS_SELECTOR, self.build_button).get_attribute('data-status')
+            if a == 'on':
                 self.available = True
-            self.available = False
+            else:
+                self.available = False
         except:
             self.available = False
 
     def try_to_build(self):
-        if self.available and self.data.Factories['shipyard'].available_to_use and self.need_amount < self.amount:
+        if self.available and self.data.Factories['shipyard'].available_to_use and self.need_amount > self.amount:
             try:
                 self.driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=shipyard')
                 self.driver.find_element(By.CSS_SELECTOR, self.build_button).click()
-                self.driver.find_element(By.CSS_SELECTOR, '#build_amount').send_keys(f'{self.need_amount - self.amount}')
-                self.driver.find_element(By.CSS_SELECTOR, self.build_button).click('span.tooltip')
+                self.driver.find_element(By.CSS_SELECTOR, '#build_amount').send_keys(f'{round(self.need_amount - self.amount)}')
+                self.driver.find_element(By.CSS_SELECTOR, 'span.tooltip').click()
+                return True
             except:
                 print(Fore.RED + f'Не смогли построить {self.need_amount} {self.name} '
                                  f'time ({datetime.datetime.now().strftime("%H:%M:%S")})')
                 print(Style.RESET_ALL)
+        return False
 
     def get_need_amount(self):
         self.need_amount = (self.data.Storages['metalStorage'].resource_income + self.data.Storages['crystalStorage'].resource_income * 2
         + self.data.Storages['deuteriumStorage'].resource_income * 3) / (self.cost_in_metal + self.cost_in_crystal*2
                                                                          + self.cost_in_deuterium*3)
-
-
