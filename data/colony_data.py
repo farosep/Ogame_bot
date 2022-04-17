@@ -1,3 +1,5 @@
+import selenium.webdriver
+
 from force_builder.ships import (
     ForceUnit,
     FighterLight,
@@ -40,12 +42,16 @@ class ColonyData:
     """
         Object that contains data dependent from planet ( buildings, resources and e.t.c)
     """
-    def __init__(self, driver, main_data: MainData):
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox,
+            main_data: MainData
+    ):
         self.main_data = main_data
         self.driver = driver
         self.set_objects_in_dicts()
 
-    def set_objects_in_dicts(self):
+    def set_objects_in_dicts(self) -> None:
         """
             Generate mines, storages, fabrics and ships objects Set them in dicts
         :return: nothing
@@ -61,9 +67,9 @@ class ColonyData:
         self.Storages["deuteriumStorage"] = DeuteriumStorage(self.driver)
         self.Storages["solarStorage"] = SolarStorage(self.driver)
         # Fabrics
-        self.Factories["roboticsFactory"] = RoboticFactory(self.driver, self)
-        self.Factories["researchLaboratory"] = ResearchLaboratory(self.driver, self)
-        self.Factories["shipyard"] = Shipyard(self.driver, self)
+        self.Factories["roboticsFactory"] = RoboticFactory(self.driver)
+        self.Factories["researchLaboratory"] = ResearchLaboratory(self.driver)
+        self.Factories["shipyard"] = Shipyard(self.driver)
         # Ships
         self.Ships["fighterLight"] = FighterLight(self.driver, self)
         self.Ships["fighterHeavy"] = FighterHeavy(self.driver, self)
@@ -96,7 +102,13 @@ class ColonyData:
 
 
 class Colony:
-    def __init__(self, driver, data: ColonyData):
-        self.colony_data = data
+    """
+        Object that represents player's planet
+    """
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox,
+            colony_data: ColonyData):
+        self.colony_data = colony_data
         self.driver = driver
         self.ref = ""

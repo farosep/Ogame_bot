@@ -15,13 +15,17 @@ from technologies.technology import (
     AstrophysicsTechnology
 )
 from data.colony_data import Colony
+import selenium.webdriver
 
 
 class MainData:
     """
         Object that contains data independent of planets and actual for user
     """
-    def __init__(self, driver) -> None:
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         self.driver = driver
         self.set_tech_in_dicts()
 
@@ -61,5 +65,3 @@ class MainData:
 
     Login1: str = "2211pozan1122@gmail.com"
     Password1: str = "LoginAdmin1765"
-
-

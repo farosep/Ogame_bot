@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import data.colony_data
 from building import Building
+import selenium.webdriver
 
 
 class SolarMine(Building):
@@ -10,7 +11,7 @@ class SolarMine(Building):
     """
     def __init__(
             self,
-            driver,
+            driver: selenium.webdriver.Firefox,
             colony_data: data.colony_data.ColonyData
     ) -> None:
         super().__init__(driver)
@@ -28,7 +29,7 @@ class SolarMine(Building):
                 return True
         return False
 
-    def get_level(self):
+    def get_level(self) -> None:
         """
             Fake func because this data is useless
         :return: Nothing
@@ -42,7 +43,7 @@ class MetalMine(Building):
     """
     def __init__(
             self,
-            driver,
+            driver: selenium.webdriver.Firefox,
             colony_data: data.colony_data.ColonyData
     ) -> None:
         super().__init__(driver)
@@ -68,7 +69,7 @@ class CrystalMine(Building):
     """
     def __init__(
             self,
-            driver,
+            driver: selenium.webdriver.Firefox,
             colony_data: data.colony_data.ColonyData
     ) -> None:
         super().__init__(driver)
@@ -94,7 +95,7 @@ class DeuteriumMine(Building):
     """
     def __init__(
             self,
-            driver,
+            driver: selenium.webdriver.Firefox,
             colony_data: data.colony_data.ColonyData
     ) -> None:
         super().__init__(driver)

@@ -1,13 +1,12 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 import datetime
-
 import data.colony_data
-from data import main_data
+import selenium.webdriver
 
 
 def get_all_info(
-        driver,
+        driver: selenium.webdriver.Firefox,
         colony_data: data.colony_data.ColonyData
 ) -> None:
     """

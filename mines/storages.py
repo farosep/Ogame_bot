@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+import selenium.webdriver
 from building import Building
 from selenium.webdriver.common.by import By
 from colorama import Fore, Style
@@ -11,7 +12,10 @@ class Storage(Building):
     """
         Base class for storages, that contains info about resources
     """
-    def __init__(self, driver) -> None:
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         super().__init__(driver)
         self.resource: int = 0
         self.resource_ref: str = ""
@@ -34,7 +38,7 @@ class Storage(Building):
                 ).text.replace(".", ""))
         except NoSuchElementException:
             print(
-                Fore.RED + f"Не смогли найти количество ресурсов {self.name}  "
+                Fore.RED + f"Didn't get amount of {self.name}  at "
                            f"time ({datetime.datetime.now().strftime('%H:%M:%S')})")
             print(Style.RESET_ALL)
             self.resource = 0
@@ -90,7 +94,10 @@ class MetalStorage(Storage):
     """
         Storage object that keeps info about metal capacity, amount, income
     """
-    def __init__(self, driver):
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         super().__init__(driver)
         self.ref_to_upgrade_button = "span.metalStorage > button:nth-child(1)"
         self.name = "metalStorage"
@@ -105,7 +112,10 @@ class CrystalStorage(Storage):
     """
         Storage object that keeps info about crystal capacity, amount, income
     """
-    def __init__(self, driver):
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         super().__init__(driver)
         self.ref_to_upgrade_button = "span.crystalStorage > button:nth-child(1)"
         self.name = "crystalStorage"
@@ -120,7 +130,10 @@ class DeuteriumStorage(Storage):
     """
         Storage object that keeps info about deuterium capacity, amount, income
     """
-    def __init__(self, driver):
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         super().__init__(driver)
         self.ref_to_upgrade_button = "span.deuteriumStorage > button:nth-child(1)"
         self.name = "deuteriumStorage"
@@ -135,7 +148,10 @@ class SolarStorage(Storage):
     """
         Fake storage object that keeps info about energy amount
     """
-    def __init__(self, driver):
+    def __init__(
+            self,
+            driver: selenium.webdriver.Firefox
+    ) -> None:
         super().__init__(driver)
         self.resource_ref = "resources_energy"
         self.name = "energy"

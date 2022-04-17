@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+import selenium.webdriver
 from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 from building import Building
@@ -16,12 +17,12 @@ class Technology(Building):
     """
     def __init__(
             self,
-            driver
+            driver: selenium.webdriver.Firefox
     ) -> None:
         super().__init__(driver)
         self.page = (
-            'https://s146-ru.ogame.gameforge.com/'
-            'game/index.php?page=ingame&component=research'
+            "https://s146-ru.ogame.gameforge.com/"
+            "game/index.php?page=ingame&component=research"
         )
 
     def try_to_upgrade(self) -> bool:
@@ -38,16 +39,16 @@ class Technology(Building):
                 ).click()
                 print(
                     Fore.BLUE +
-                    f'{self.name} technology start to research '
-                    f'at {datetime.datetime.now().strftime("%H:%M:%S")}'
+                    f"{self.name} technology start to research "
+                    f"at {datetime.datetime.now().strftime('%H:%M:%S')}"
                 )
                 print(Style.RESET_ALL)
                 return True
             except NoSuchElementException or ElementNotInteractableException:
                 print(
                     Fore.RED +
-                    f'{self.name} technology was NOT started to research '
-                    f'at {datetime.datetime.now().strftime("%H:%M:%S")}')
+                    f"{self.name} technology was NOT started to research "
+                    f"at {datetime.datetime.now().strftime('%H:%M:%S')}")
                 print(Style.RESET_ALL)
         return False
 
@@ -58,8 +59,8 @@ class EnergyTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.energyTechnology > button'
-        self.name = 'energyTechnology'
+        self.ref_to_upgrade_button = "span.energyTechnology > button"
+        self.name = "energyTechnology"
 
     def try_to_upgrade(self) -> bool:
         """
@@ -78,8 +79,8 @@ class EspionageTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.espionageTechnology > button'
-        self.name = 'espionageTechnology'
+        self.ref_to_upgrade_button = "span.espionageTechnology > button"
+        self.name = "espionageTechnology"
 
 
 class ComputerTechnology(Technology):
@@ -88,8 +89,8 @@ class ComputerTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.computerTechnology > button'
-        self.name = 'computerTechnology'
+        self.ref_to_upgrade_button = "span.computerTechnology > button"
+        self.name = "computerTechnology"
 
 
 class WeaponsTechnology(Technology):
@@ -98,8 +99,8 @@ class WeaponsTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.weaponsTechnology > button'
-        self.name = 'weaponsTechnology'
+        self.ref_to_upgrade_button = "span.weaponsTechnology > button"
+        self.name = "weaponsTechnology"
 
 
 class ArmorTechnology(Technology):
@@ -108,8 +109,8 @@ class ArmorTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.armorTechnology > button'
-        self.name = 'armorTechnology'
+        self.ref_to_upgrade_button = "span.armorTechnology > button"
+        self.name = "armorTechnology"
 
 
 class LaserTechnology(Technology):
@@ -118,8 +119,8 @@ class LaserTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.laserTechnology > button'
-        self.name = 'laserTechnology'
+        self.ref_to_upgrade_button = "span.laserTechnology > button"
+        self.name = "laserTechnology"
 
     def try_to_upgrade(self) -> bool:
         """
@@ -138,8 +139,8 @@ class CombustionDriveTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.combustionDriveTechnology > button'
-        self.name = 'combustionDriveTechnology'
+        self.ref_to_upgrade_button = "span.combustionDriveTechnology > button"
+        self.name = "combustionDriveTechnology"
 
 
 class ImpulseDriveTechnology(Technology):
@@ -148,8 +149,8 @@ class ImpulseDriveTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.impulseDriveTechnology > button'
-        self.name = 'impulseDriveTechnology'
+        self.ref_to_upgrade_button = "span.impulseDriveTechnology > button"
+        self.name = "impulseDriveTechnology"
 
 
 class ShieldingTechnology(Technology):
@@ -158,8 +159,8 @@ class ShieldingTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.shieldingTechnology > button'
-        self.name = 'shieldingTechnology'
+        self.ref_to_upgrade_button = "span.shieldingTechnology > button"
+        self.name = "shieldingTechnology"
 
 
 class IonTechnology(Technology):
@@ -168,8 +169,8 @@ class IonTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.ionTechnology > button'
-        self.name = 'ionTechnology'
+        self.ref_to_upgrade_button = "span.ionTechnology > button"
+        self.name = "ionTechnology"
 
 
 class AstrophysicsTechnology(Technology):
@@ -178,5 +179,5 @@ class AstrophysicsTechnology(Technology):
     """
     def __init__(self, driver):
         super().__init__(driver)
-        self.ref_to_upgrade_button = 'span.astrophysicsTechnology > button'
-        self.name = 'astrophysicsTechnology'
+        self.ref_to_upgrade_button = "span.astrophysicsTechnology > button"
+        self.name = "astrophysicsTechnology"

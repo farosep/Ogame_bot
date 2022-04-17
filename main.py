@@ -3,7 +3,7 @@
 from selenium import webdriver
 import decider
 import info_scrapper
-from Login import Login
+from login import Login
 import datetime
 from data.main_data import MainData
 from data.colony_data import Colony, ColonyData
@@ -40,12 +40,10 @@ class StartGame:
                 #  get information
                 info_scrapper.get_all_info(
                     self.driver,
-                    self.main_data,
                     self.main_data.Colonies[i].colony_data
                 )
                 #  decide what to build or research
                 decider.decide_what_to_do(
-                    self.main_data,
                     self.main_data.Colonies[i].colony_data
                 )
             if self.driver.current_url == "https://lobby.ogame.gameforge.com/ru_RU/hub":
@@ -73,5 +71,5 @@ class StartGame:
             )
 
 
-a: StartGame = StartGame()
+a = StartGame()
 a.start()

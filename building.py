@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+import selenium.webdriver
 from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 import datetime
@@ -16,7 +17,7 @@ class Building:
     """
     def __init__(
             self,
-            driver
+            driver: selenium.webdriver.Firefox
     ) -> None:
         self.driver = driver
         self.ref_to_upgrade_button: str = ""

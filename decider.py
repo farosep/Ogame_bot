@@ -1,14 +1,13 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-from data import main_data
+import data.colony_data
 
 
 def decide_what_to_do(
-        colony_data: bot_data.ColonyData
+        colony_data: data.colony_data.ColonyData
 ) -> None:
     """
         This func check what it can build / research and do it
-    :param main_data: MainData class object
     :param colony_data: ColonyData class object
     :return: Nothing
     """
