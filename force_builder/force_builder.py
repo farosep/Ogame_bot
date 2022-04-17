@@ -2,11 +2,17 @@ from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 import datetime
 
+from data import main_data
+
 
 class ForceUnit:
-    def __init__(self, driver, data):
+    def __init__(
+            self,
+            driver,
+            colony_data: bot_data.ColonyData
+    ):
         self.driver = driver
-        self.data = data
+        self.colony_data: bot_data.ColonyData = colony_data
         self.amount = 0
         self.amount_ref = ''
         self.name = ''
@@ -38,7 +44,7 @@ class ForceUnit:
             self.available = False
 
     def try_to_build(self):
-        if self.available and self.data.Factories['shipyard'].available_to_use and self.need_amount > self.amount:
+        if self.available and self.colony_data.Factories['shipyard'].available_to_use and self.need_amount > self.amount:
             try:
                 self.driver.get('https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=shipyard')
                 self.driver.find_element(By.CSS_SELECTOR, self.build_button).click()
@@ -51,8 +57,8 @@ class ForceUnit:
                 print(Style.RESET_ALL)
         return False
 
-    def get_need_amount(self, main_data):
-        self.need_amount = (self.data.Storages['metalStorage'].resource_income
-                            + self.data.Storages['crystalStorage'].resource_income * 2
-                            + self.data.Storages['deuteriumStorage'].resource_income * 3) \
+    def get_need_amount(self):
+        self.need_amount = (self.colony_data.Storages['metalStorage'].resource_income
+                            + self.colony_data.Storages['crystalStorage'].resource_income * 2
+                            + self.colony_data.Storages['deuteriumStorage'].resource_income * 3) \
                            / (self.cost_in_metal + self.cost_in_crystal*2 + self.cost_in_deuterium*3) * 10

@@ -1,18 +1,17 @@
 from force_builder.force_builder import ForceUnit
-from data import ColonyData
 
 
 class FighterLight(ForceUnit):
     """
         Light fighter object with its own params like cost
     """
-    def __init__(self, driver, data: ColonyData):
+    def __init__(self, driver, colony_data):
         """
 
         :param driver: Browser driver for selenium
         :param data: colony_data object
         """
-        super().__init__(driver, data)
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.fighterLight > span:nth-child(1) > span:nth-child(1)'
         self.name = 'fighterLight'
         self.build_button = 'li.fighterLight'
@@ -21,8 +20,8 @@ class FighterLight(ForceUnit):
 
 
 class FighterHeavy(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.fighterHeavy > span:nth-child(1) > span:nth-child(1)'
         self.name = 'fighterHeavy'
         self.build_button = 'li.fighterHeavy'
@@ -31,8 +30,8 @@ class FighterHeavy(ForceUnit):
 
 
 class Cruiser(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.cruiser > span:nth-child(1) > span:nth-child(1)'
         self.name = 'cruiser'
         self.build_button = 'li.cruiser'
@@ -42,8 +41,8 @@ class Cruiser(ForceUnit):
 
 
 class Battleship(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.battleship > span:nth-child(1) > span:nth-child(1)'
         self.name = 'battleship'
         self.build_button = 'li.battleship'
@@ -52,8 +51,8 @@ class Battleship(ForceUnit):
 
 
 class Interceptor(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.interceptor > span:nth-child(1) > span:nth-child(1)'
         self.name = 'interceptor'
         self.build_button = 'li.interceptor'
@@ -63,8 +62,8 @@ class Interceptor(ForceUnit):
 
 
 class Bomber(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.bomber > span:nth-child(1) > span:nth-child(1)'
         self.name = 'bomber'
         self.build_button = 'li.bomber'
@@ -74,8 +73,8 @@ class Bomber(ForceUnit):
 
 
 class Destroyer(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.destroyer > span:nth-child(1) > span:nth-child(1)'
         self.name = 'destroyer'
         self.build_button = 'li.destroyer'
@@ -85,8 +84,8 @@ class Destroyer(ForceUnit):
 
 
 class Reaper(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.reaper > span:nth-child(1) > span:nth-child(1)'
         self.name = 'reaper'
         self.build_button = 'li.reaper'
@@ -95,11 +94,9 @@ class Reaper(ForceUnit):
         self.cost_in_deuterium = 20000
 
 
-
-
 class Resbuggy(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.resbuggy > span:nth-child(1) > span:nth-child(1)'
         self.name = 'resbuggy'
         self.build_button = 'li.resbuggy'
@@ -109,20 +106,20 @@ class Resbuggy(ForceUnit):
 
 
 class EspionageProbe(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, main_data):
+        super().__init__(driver, main_data)
         self.amount_ref = 'span.espionageProbe > span:nth-child(1) > span:nth-child(1)'
         self.name = 'espionageProbe'
         self.build_button = 'li.espionageProbe'
         self.cost_in_crystal = 1000
 
-    def get_need_amount(self, main_data):
-        self.need_amount = (main_data.Technologies['computerTechnology'].level + 1) * 5
+    def get_need_amount(self):
+        self.need_amount = (self.colony_data.main_data.Technologies['computerTechnology'].level + 1) * 5
 
 
 class TransporterSmall(ForceUnit):
-    def __init__(self, driver, data: ColonyData):
-        super().__init__(driver, data)
+    def __init__(self, driver, colony_data):
+        super().__init__(driver, colony_data)
         self.amount_ref = 'span.transporterSmall > span:nth-child(1) > span:nth-child(1)'
         self.name = 'transporterSmall'
         self.build_button = 'li.transporterSmall'
@@ -130,15 +127,15 @@ class TransporterSmall(ForceUnit):
         self.cost_in_metal = 2000
         self.resource_hold = 5000
 
-    def get_need_amount(self, main_data):
-        self.need_amount = (self.data.Storages['metalStorage'].resource +
-                            self.data.Storages['crystalStorage'].resource +
-                            self.data.Storages['deuteriumStorage'].resource) / self.resource_hold
+    def get_need_amount(self):
+        self.need_amount = (self.colony_data.Storages['metalStorage'].resource +
+                            self.colony_data.Storages['crystalStorage'].resource +
+                            self.colony_data.Storages['deuteriumStorage'].resource) / self.resource_hold
 
 
 class ColonyShip(ForceUnit):
-    def __init__(self, driver, data):
-        super().__init__(driver, data)
+    def __init__(self, driver, main_data):
+        super().__init__(driver, main_data)
         self.amount_ref = 'span.colonyShip > span:nth-child(1) > span:nth-child(1)'
         self.name = 'colonyShip'
         self.build_button = 'li.colonyShip  '
@@ -146,6 +143,6 @@ class ColonyShip(ForceUnit):
         self.cost_in_metal = 20000
         self.resource_hold = 10000
 
-    def get_need_amount(self, main_data):
-        self.need_amount = (round(main_data.Technologies['astrophysicsTechnology'].level/2)) \
-                           - len(main_data.Colonies) + 1 - self.amount
+    def get_need_amount(self):
+        self.need_amount = (round(self.colony_data.main_data.Technologies['astrophysicsTechnology'].level/2)) \
+                           - len(self.colony_data.main_data.Colonies) + 1 - self.amount

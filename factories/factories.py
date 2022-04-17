@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-from Building import Building
+from building import Building
 from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 
@@ -9,6 +9,8 @@ class Factory(Building):
     def __init__(self, driver, data):
         super().__init__(driver, data)
         self.page = 'https://s146-ru.ogame.gameforge.com/game/index.php?page=ingame&component=facilities'
+        self.available_to_use = False
+        self.available_to_use_ref = ""
 
     def try_to_upgrade(self):
         if self.available_to_upgrade:
@@ -26,6 +28,15 @@ class Factory(Building):
     def get_level(self):
         pass
 
+    def get_available_to_use(self):
+        try:
+            if self.driver.find_element(By.XPATH, self.available_to_use_ref) is not None:
+                self.available_to_use = True
+            else:
+                self.available_to_use = False
+        except:
+            self.available_to_use = False
+
 
 class RoboticFactory(Factory):
     def __init__(self, driver, data):
@@ -42,14 +53,6 @@ class ResearchLaboratory(Factory):
         self.available_to_use_ref = '//*[contains(text(), "Не ведется никаких")]'
         self.available_to_use = False
 
-    def get_available_to_use(self):
-        try:
-            if self.driver.find_element(By.XPATH, self.available_to_use_ref) is not None:
-                self.available_to_use = True
-            else:
-                self.available_to_use = False
-        except:
-            self.available_to_use = False
 
 class Shipyard(Factory):
     def __init__(self, driver, data):
@@ -58,12 +61,3 @@ class Shipyard(Factory):
         self.name = 'shipyard'
         self.available_to_use = False
         self.available_to_use_ref = '//*[contains(text(), "Корабли")]'
-
-    def get_available_to_use(self):
-        try:
-            if self.driver.find_element(By.XPATH, self.available_to_use_ref) is not None:
-                self.available_to_use = True
-            else:
-                self.available_to_use = False
-        except:
-            self.available_to_use = False
