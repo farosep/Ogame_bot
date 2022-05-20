@@ -2,7 +2,6 @@ from colorama import Fore, Style
 from selenium.webdriver.common.by import By
 import datetime
 from selenium.common.exceptions import NoSuchElementException
-import data.colony_data
 import selenium.webdriver
 
 
@@ -13,10 +12,10 @@ class ForceUnit:
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         self.driver = driver
-        self.colony_data: data.colony_data.ColonyData = colony_data
+        self.colony_data = colony_data
         self.amount: int = 0
         self.amount_ref: str = ""
         self.name: str = ""

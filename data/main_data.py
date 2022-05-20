@@ -14,7 +14,6 @@ from technologies.technology import (
     IonTechnology,
     AstrophysicsTechnology
 )
-from data.colony_data import Colony
 import selenium.webdriver
 
 
@@ -54,7 +53,7 @@ class MainData:
 
     }
 
-    Colonies: dict[str, Colony] = {
+    Colonies: dict[str, any] = {
 
     }
 

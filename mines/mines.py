@@ -12,7 +12,7 @@ class SolarMine(Building):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver)
         self.colony_data = colony_data
@@ -44,7 +44,7 @@ class MetalMine(Building):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver)
         self.colony_data = colony_data
@@ -70,7 +70,7 @@ class CrystalMine(Building):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver)
         self.colony_data = colony_data
@@ -96,7 +96,7 @@ class DeuteriumMine(Building):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver)
         self.ref_to_upgrade_button = "span.deuteriumSynthesizer > button:nth-child(1)"

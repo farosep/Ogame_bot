@@ -1,6 +1,5 @@
 from force_builder.force_builder import ForceUnit
 import selenium.webdriver
-import data.colony_data
 
 
 class FighterLight(ForceUnit):
@@ -10,7 +9,7 @@ class FighterLight(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.fighterLight > span:nth-child(1) > span:nth-child(1)"
@@ -27,7 +26,7 @@ class FighterHeavy(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.fighterHeavy > span:nth-child(1) > span:nth-child(1)"
@@ -44,7 +43,7 @@ class Cruiser(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.cruiser > span:nth-child(1) > span:nth-child(1)"
@@ -62,7 +61,7 @@ class Battleship(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.battleship > span:nth-child(1) > span:nth-child(1)"
@@ -79,7 +78,7 @@ class Interceptor(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.interceptor > span:nth-child(1) > span:nth-child(1)"
@@ -97,7 +96,7 @@ class Bomber(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.bomber > span:nth-child(1) > span:nth-child(1)"
@@ -115,7 +114,7 @@ class Destroyer(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.destroyer > span:nth-child(1) > span:nth-child(1)"
@@ -133,7 +132,7 @@ class Reaper(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.reaper > span:nth-child(1) > span:nth-child(1)"
@@ -151,7 +150,7 @@ class Resbuggy(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.resbuggy > span:nth-child(1) > span:nth-child(1)"
@@ -169,7 +168,7 @@ class EspionageProbe(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.espionageProbe > span:nth-child(1) > span:nth-child(1)"
@@ -194,7 +193,7 @@ class TransporterSmall(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.transporterSmall > span:nth-child(1) > span:nth-child(1)"
@@ -223,7 +222,7 @@ class ColonyShip(ForceUnit):
     def __init__(
             self,
             driver: selenium.webdriver.Firefox,
-            colony_data: data.colony_data.ColonyData
+            colony_data
     ) -> None:
         super().__init__(driver, colony_data)
         self.amount_ref = "span.colonyShip > span:nth-child(1) > span:nth-child(1)"
